@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color:#fff;
+    --background:#0099bc;
+    --howColor:#f30769e3;
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    color: var(--color);
+}
+#mainer{
+    width: 100%;
+    height: 100%;
+}
+#about{
+    width: 100%;
+    height: 100%;
+}
+#about div{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+ol{
+    list-style: none;
+}
+ol li{
+    width: 85%;
+    padding: 1rem;
+    margin: 0.4rem auto;
+    background-color: thistle;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: 1s ease-in-out border;
+}
+ol li:hover{
+    border: 2px solid #fff;
+}
+.way{
+    width: 80%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--color);
+    background: rgb(243, 134, 243);
+}
+.method{
+    width: 25%;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #fff;
+}
+.how{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--howColor);
+}
+.ill{
+    background: rgb(250, 154, 250);
+    width: 45%;
+    text-align: center;
+    padding: 0.4rem;
+    margin: 3px auto;
+    letter-spacing: 2px;
+    font-style: italic;
+    border-radius: 0.7rem;
+    border: 1px solid #fff;
+}
+.get{
+    color:green;
+}
+.delete{
+    color: red;
+}
+.post{
+    color: rgb(10, 233, 177);
+}
+.patch{
+    color: #0ac6f0;
+}
+/* the illustraion part css */
+#users .heading{
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#inputs input[type="text"],
+#inputs input[type="number"]{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #767676;
+    padding: 0.7rem;
+    margin: 4px auto;
+    border-radius: 1rem;
+}
+#inputs input[type="submit"]{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: rgb(10, 233, 177);
+    background-color: var(--color);
+    width: 30%;
+    padding: 0.4rem;
+    border-radius: 1.2rem;
+}
+/* media tags */
+
+@media screen and (min-width:760px){
+    ol li{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .way{
+        width: 60%;
+    }
+}

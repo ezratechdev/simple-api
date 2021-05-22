@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Swift-api</title>
+</head>
+<body>
+    <div id="mainer">
+        <div id="about">
+            <div>This is a simple guide on how the api works</div>
+            <ol>
+                <li>
+                    <div class="way">To get all users :</div>
+                    <div class="explaination">
+                        <span class="how">Send a get request to link/users</span>
+                        <div class="show">
+                            <div class="method get">GET</div>
+                            <div class="ill">link/users</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="way">To add user :</div>
+                    <div class="explaination">
+                        <span class="how">Send a post request with user data in the body minus the id as it is auto generated and assigned in the server</span>
+                        <div class="show">
+                            <div class="method post">POST</div>
+                            <div class="ill">link/users</div>
+                            <div id="inputs">
+                                <form action="/users" method="post">
+                                    <input type="text" name="name" placeholder="Enter Name" required> <br>
+                                    <input type="number" name="age" placeholder="17" required> <br>
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="way">To get data on specific user :</div>
+                    <div class="explaination">
+                        <span class="how">Send a get request to link/users/userid</span>
+                        <div class="show">
+                            <div class="method get">GET</div>
+                            <div class="ill">link/users/userid</div>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="way">To patch user details :</div>
+                    <div class="explaination">
+                        <span class="how">Send a patch request to link/users/userid with the data to be changed in the body using postman</span>
+                        <div class="show">
+                            <div class="method patch">PATCH</div>
+                            <div class="ill">link/users/userid</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="way">To delete user :</div>
+                    <div class="explaination">
+                        <span class="how">Send a delete request to link/users/userid using post man</span>
+                        <div class="show">
+                            <div class="method delete">DELETE</div>
+                            <div class="ill">link/users/userid</div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <!-- <div id="users">
+            <div class="heading">
+                Simple illustration on how the api works
+            </div>
+            <div id="userInfo">
+                data--here
+            </div>
+        </div> -->
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
