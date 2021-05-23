@@ -17,7 +17,7 @@ const apiCaller = link =>{
     });
 }
 
-apiCaller("http://localhost:5000/users").then(data => console.log(data)).catch(error => console.log(error));
+apiCaller("https://simple-swift-api.herokuapp.com/users").then(data => console.log(data)).catch(error => console.log(error));
 
 linker[0].addEventListener("click",e => window.location.href = `${currentLink}users`);
 linker[2].addEventListener("click",e => window.location.href = `${currentLink}users/6eea0d5b-c5db-4fea-99bb-6f31dce4ff3a`);
